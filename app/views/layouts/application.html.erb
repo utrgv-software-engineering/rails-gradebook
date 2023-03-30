@@ -10,13 +10,14 @@
 
   <body>
     <strong>Navigation: </strong>
-    <% if user_signed_in? %>
-          <%= link_to "Sign Out", destroy_user_session_path, method: "delete" %>
-    <% else %>
-          <a href="/">View Gradebook</a> -
-          <a href="/users/sign_in">Sign In</a> -
-    <% end %>
-
+    <div class="nav-link">
+      <% if user_signed_in? %>
+            <%= button_to "Sign out", destroy_user_session_path, method: :delete %>
+      <% else %>
+            <a href="/">View Gradebook</a> -
+            <a href="/users/sign_in">Sign In</a> -
+      <% end %>
+    </div>
     <% if flash[:error] %>
       <div id="error_explanation">
         <p><%= flash[:error] %></p>
