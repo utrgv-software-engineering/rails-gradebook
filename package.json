@@ -2,10 +2,12 @@
   "name": "gradebook",
   "private": true,
   "dependencies": {
+    "@hotwired/stimulus": "^3.2.1",
     "@rails/actioncable": "^7.0.4-3",
     "@rails/activestorage": "^7.0.4-3",
     "@rails/ujs": "^7.0.4-3",
     "@rails/webpacker": "5.4.4",
+    "esbuild": "^0.17.14",
     "jquery": "^3.4.1",
     "turbolinks": "^5.2.0"
   },
