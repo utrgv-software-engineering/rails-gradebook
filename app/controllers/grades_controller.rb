@@ -3,9 +3,7 @@ class GradesController < ApplicationController
 
   # GET /grades
   def index
-    if !user_signed_in?
-      redirect_to user_session_path
-    end
+
   end
 
   # GET /grades/1
